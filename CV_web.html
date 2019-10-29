@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chiegang Sape</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+  <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #616161;
+    background: #e7e7e7ff;
+    max-height: 250px;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0;
+    /* border: 1px solid #e3e3e3; */
+    margin-top: -100px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bioD {
+    display: flex;
+    padding-top: 10px;
+}
+
+.bioDRight {
+    padding-left: 20px;
+}
+
+.biodata {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.details {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.details h1 {
+    font-size: 25px;
+    color: #08c487;
+    text-transform: uppercase;
+}
+
+.details h1 span {
+    color: #333;
+    font-weight: 500;
+}
+
+.inner-box {
+    display: flex;
+    padding: 30px;
+}
+
+.logo {
+    color: #fff;
+    padding-top: 25px;
+    font-size: 15px;
+}
+
+.midspace {
+    padding: 15px;
+}
+
+.pix {
+    padding: 0;
+    height: 268px;
+    /* box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.9); */
+}
+
+progress[value] {
+    text-align: left;
+    height: 10px;
+    width: 100%;
+
+    -webkit-appearance: none;
+    border: none;
+}
+
+progress:before {
+    content: attr(data-label);
+    font-size: 0.8em;
+    vertical-align: 0
+}
+
+progress::-webkit-progress-bar {
+    background-color: #c9c9c9;
+}
+
+progress::-webkit-progress-value {
+    background-color: #08c487;
+}
+
+progress::-moz-progress-bar {
+    background-color: #08c487;
+}
+
+.row {
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+
+.skill-level {
+    padding-left: 30px;
+    width: 60%;
+}
+
+.probox {
+    padding-bottom: 28px;
+}
+
+.skill-type p {
+    padding-bottom: 8px;
+    padding-top: 11px;
+    text-align: right;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #08c487;
+    padding: 14px;
+}
+
+.svg:hover {
+    padding: 5px;
+}
+
+.svg:hover {
+    border: solid 1px #fff;
+}
+
+.shodow-box {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tittle {
+    color: #08c487;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.topbg {
+    min-height: 30vh;
+    background: #08c487;
+    background-attachment: fixed;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+/* WORK EXPERIENCE */
+
+
+.expi {
+    padding: 30px;
+}
+
+.exp-box {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.work {
+    flex-grow: 4;
+}
+
+.work h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.work h2 {
+    font-size: 15px;
+}
+
+.work ul {
+    list-style: square;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+/* INTEREST */
+
+
+.interest ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    flex-direction: row;
+    background: #08c487;
+    height: 50px;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info p {
+    color: #fff;
+    padding-top: 15px;
+}
+
+
+#float-btn {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*add full-width input fields*/ 
+input[type=text], 
+input[type=password] { 
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+} 
+/* set a style for all buttons*/ 
+.contact-me {
+    position: fixed;
+    display: flex;
+    bottom:40px;
+    right:40px;
+    
+}
+
+button { 
+    background-color: #08c487; 
+    color: white; 
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    cursor: pointer; 
+    /* width: 100%;  */
+    border-radius: 5%;
+    font-size: 15px;
+    opacity: 0.7;
+} 
+
+button:hover {
+    background-color: #333;
+}
+
+/*set styles for the cancel button*/ 
+.cancelbtn { 
+    padding: 14px 20px; 
+    background-color: #FF2E00; 
+} 
+/*float cancel and signup buttons and add an equal width*/ 
+.cancelbtn, 
+.signupbtn { 
+    float: left; 
+    width: 50% 
+} 
+/*add padding to container elements*/ 
+.form-container { 
+    padding: 16px; 
+} 
+
+.form-input {
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+}
+/*define the modal’s background*/ 
+  
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100vh; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    /* padding-top: 60px;  */
+} 
+/*define the modal-content background*/ 
+  
+.modal-content { 
+    background-color: #fefefe; 
+    margin: 5% auto 0 auto; 
+    border: 1px solid #888; 
+    width: 50%; 
+} 
+/*define the close button*/ 
+  
+.close { 
+    position: absolute; 
+    right: 35px; 
+    top: 15px; 
+    color: #000; 
+    font-size: 40px; 
+    font-weight: bold; 
+} 
+/*define the close hover and focus effects*/ 
+  
+.close:hover, 
+.close:focus { 
+    color: red; 
+    cursor: pointer; 
+} 
+  
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table; 
+} 
+  
+@media screen and (max-width: 600px) { 
+    .cancelbtn, 
+    .signupbtn { 
+        width: 100%; 
+    } 
+} 
+  </style>
+</head>
+
+<body>
+
+  <head>
+    <div class="topbg">
+      <div class="container">
+        <div class="banner">
+          <div class="logo">
+            <h1><span>CURRICULUM VITAE</span> </h1>
+          </div>
+          <div class="sociaBox">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </head>
+  <section id="bio-data">
+    <div class="container">
+      <div class="bio">
+        <div class="pix">
+          <img src="https://res.cloudinary.com/sape123/image/upload/v1571408607/IMG_20190518_183300_785_500x466_2_sykpju.jpg" width="312px"
+            alt="Chiegang Sape">
+        </div>
+        <div class="biodata">
+          <div class="details">
+            <div class="heading">
+              <h1><span>I'm</span>  CHIEGANG SAPE Bulcard Brandone</h1>
+              Computer Technician/Web developper
+            </div>
+            <div class="bioD">
+              <div class="bioDLeft">
+                <p>Date of birth :</p>
+                <p>Email :</p>
+                <p>Phone :</p>
+                <p>Address :</p>
+                <p>Nationality :</p>
+                <p>Sex :</p>
+              </div>
+              <div class="bioDRight">
+                <p>13/12/1993 in Douala</p>
+                <p>brandone.sape@gmail.com</p>
+                <p>(+237) 695165899, 675782970 </p>
+                <p>Dang, Ngaoundere, Cameroun</p>
+                <p>Cameroonian</p>
+                <p>Male</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="social-icon">
+            <div><a href="https://web.facebook.com/brandone.sape" target="_blank" rel="noopener noreferrer"><img class="svg" src="https://res.cloudinary.com/sape123/image/upload/v1572272377/facebook_ogslyi.svg" alt="Facebook" width="25px"></a> </div>
+            <div><a href="https://twitter.com/tjrsape" target="_blank" rel="noopener noreferrer"><img class="svg" src="https://res.cloudinary.com/sape123/image/upload/v1572272378/twitter_f8dvmv.svg" alt="Twitter" width="25px"></a> </div>
+            <div><a href="https://api.whatsapp.com/send?phone=237695165899" target="_blank" rel="noopener noreferrer"><img class="svg" src="https://res.cloudinary.com/sape123/image/upload/v1572272379/whatsapp_bprhrv.svg" alt="Whatsapp" width="25px"></a> </div>
+            <div><a href="https://www.linkedin.com/in/brandone-sape-841279b9/" target="_blank" rel="noopener noreferrer"><img class="svg" src="https://res.cloudinary.com/sape123/image/upload/v1572272377/linkedin_tgdgin.svg" alt="Linkedin" width="25px"></a> </div>
+            <div><a href="https://github.com/Brandone123" target="_blank" rel="noopener noreferrer"><img class="svg" src="https://res.cloudinary.com/sape123/image/upload/v1572272377/github_kbovgn.svg" alt="Github" width="25px"></a> </div>
+            <div><a href="http://" target="_blank" rel="noopener noreferrer"><img class="svg" src="https://res.cloudinary.com/sape123/image/upload/v1572272378/skype_fftati.svg" alt="skype" width="25px"></a> </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- SKILL SECTION START -->
+  </section>
+  <section id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="tittle">
+          <h1>Skills</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="shodow-box">
+          <div class="inner-box">
+            <div class="skill-type">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript</p>
+              <p>Network Maintenance and Troubleshooting</p>
+              <p>administration Network and System,<br> wireless network</p>
+              <p>Computer Tool Master (Microsoft Word; <br>Excel; Access etc...)</p>
+              <p>SGBD, MySQL, XML, AJAX, joomla</p>
+            </div>
+            <div class="skill-level">
+              <div class="probox">
+                <progress value="85" max="100" data-label="85%"></progress>
+              </div>
+              <div class="probox">
+                <progress value="75" max="100" data-label="75%"></progress>
+              </div>
+              <div class="probox">
+                <progress value="60" max="100" data-label="60%"></progress>
+              </div>
+              <div class="probox">
+                <progress value="90" max="100" data-label="90%"></progress>
+              </div>
+              <div class="probox">
+                <progress value="50" max="100" data-label="50%"></progress>
+              </div>
+              <div class="probox">
+                <progress value="80" max="100" data-label="80%"></progress>
+              </div>
+              <div class="probox">
+                <progress value="70" max="100" data-label="70%"></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SKILL SECTION END -->
+
+  <!-- WORK EXPERIENCE SECTION START -->
+
+  <section id="work-experiance">
+    <div class="container">
+      <div class="row">
+        <div class="tittle">
+          <h1>Work experience</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="shodow-box">
+          <div class="expi">
+            <div class="exp-box">
+              <div class="work">
+                <h1>HNG Internship 6</h1>
+                <h2>Intern (online)</h2>
+                <ul>
+                  <li>We have been more than 7000+ to subscribe to the HNG Internship 6 program</li>
+                  <li>The program has 10 stages, each week we are assigned tasks with a deadline</li>
+                  <li>When you do not deliver the completed task or do not deliver on time,<br> you are ejected from the program</li>
+                  <li>At certain stages, we have been called to work in a team,<br> I was the team lead at stage 6</li>
+                  <li>The tasks generally consisted of: creating websites, creating web <br>and mobile applications with certain rules and specifications to respect</li>
+                  <li>I arrived at stage 8 with a total of 400 members, <br>here is the application link so I had to participate: <a href="http://docufix.ga">Docufix</a>, <a href="https://oslo-diner.github.io/oslodiner/">Oslo-diner</a>, <a href="https://lancers.app/">Lancers App</a>, <br><a href="http://mini-classroom.byethost4.com/index.php/?i=1">Mini class-room</a>, <a href="https://financetracker-triptolemus.herokuapp.com/">Finance-tracker</a>, <a href="https://giftapad.github.io/">Gift-pad</a>,  </li>
+                  <li>During the program we regularly use platforms like: <br>Slack, github, pivotal-tracker, figma, lucid, cloudinary ...</li>
+                </ul>
+              </div>
+              <div class="date-range">
+                <p>August 2019 at November</p>
+              </div>
+            </div>
+
+            <div class="exp-box">
+              <div class="work">
+                <h1>Eneo Cameroun, Garoua</h1>
+                <h2>Professional training </h2>
+                <ul>
+                  <li>Implementation of Glpi Application of the management of the region’s IT Park <br>(with new feature, source code modification,...)</li>
+                  <li>Computer Installation and Maintenance</li>
+                  <li>Network Maintenance and Troubleshooting</li>
+                  <li>Computer Hardware Supply and Maintenance</li>
+                  <li>Computer Hardware Repair</li>
+                </ul>
+              </div>
+              <div class="date-range">
+                <p>July 2019 at September</p>
+              </div>
+            </div>
+            <div class="exp-box">
+              <div class="work">
+                <h1>FODEVIE Consulting, Yaoundé </h1>
+                <h2>Trainee </h2>
+                <ul>
+                  <li>Creation of the website of the vocational guidance and training center of the company,<br> including online training</li>
+                  <li>Computer Installation and Maintenance</li>
+                  <li>Computer Hardware Repair  (about 10 machines)</li>
+                </ul>
+              </div>
+              <div class="date-range">
+                <p>2018 (3 months)</p>
+              </div>
+            </div>
+            <div class="exp-box">
+              <div class="work">
+                <h1>Afrique Hotel Airport, Douala</h1>
+                <h2>Professional course</h2>
+                <ul>
+                  <li>Intervening in the different rooms to solve all types of problems <br>(Computer, Plumbing, Air-conditioning or Electric...)</li>
+                  <li>Installation of network cables, switch to the main building level 3 for Internet access<br> via wireless network</li>
+                  <li>Configuration of these equipment</li>
+                </ul>
+              </div>
+              <div class="date-range">
+                <p>2014 (4 months)</p>
+              </div>
+            </div>
+            <div class="exp-box">
+              <div class="work">
+                <h1>Eneo Cameroon, Ngaoundéré</h1>
+                <h2>Trainee</h2>
+                <ul>
+                  <li>Intervening on computers for any problem within the organization</li>
+                  <li>Computer Instalation and Maintenance</li>
+                  <li>Remote Computer Assistance </li>
+                  <li>Test of Installation and Configuration of Server, Routers and Switch</li>
+                  <li>Computer Hardware Repair</li>
+                </ul>
+              </div>
+              <div class="date-range">
+                <p>2016 (3 months)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- WORK EXPERIENCE SECTION END -->
+  <!-- OTHER WORK EXPERIENCE SECTION START -->
+
+  <section id="work-experiance">
+    <div class="container">
+      <div class="row">
+        <div class="tittle">
+          <h1>OTHER WORK EXPERIENCE</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="shodow-box">
+          <div class="expi">
+            <div class="exp-box">
+              <div class="work">
+                <h1>Google Africa Developer Scholarship</h1>
+                <h2>Track: MWD (Mobile Web Developper) </h2>
+              </div>
+              <div class="date-range">
+                <p>2019 (07 months)</p>
+              </div>
+            </div>
+
+            <div class="exp-box">
+              <div class="work">
+                <h1>Cameroon Red Cross Relief Training in Douala</h1>
+                <h2>Professional training </h2>
+              </div>
+              <div class="date-range">
+                <p>2015 (02 months)</p>
+              </div>
+            </div>
+            <div class="exp-box">
+              <div class="work">
+                <h1>Fire training at the base of the 20th Fire Brigade </h1>
+                <h2>Trainee </h2>
+              </div>
+              <div class="date-range">
+                <p>2015 (02 months)</p>
+              </div>
+            </div>
+            <div class="exp-box">
+              <div class="work">
+                <h1>Driver's License</h1>
+                <h2>Category B </h2>
+              </div>
+              <div class="date-range">
+                <p>2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- WORK EXPERIENCE SECTION END -->
+
+  <!-- EDUCATION SECTION START -->
+
+  <section id="education">
+    <div class="container">
+      <div class="row">
+        <div class="tittle">
+          <h1>Education</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="shodow-box">
+          <div class="expi">
+
+            <div class="exp-box">
+              <div class="work">
+                <h1>Bachelor of Computer Science </h1>
+                <h2>the University of N’Gaoundéré</h2>
+              </div>
+              <div class="date-range">
+                <p>2018 - 2019</p>
+              </div>
+            </div>
+             <div class="exp-box">
+              <div class="work">
+                <h1>DEUC in Architecture and Network </h1>
+                <h2>the University of N’Gaoundéré</h2>
+              </div>
+              <div class="date-range">
+                <p>2017 - 2018</p>
+              </div>
+            </div>
+             <div class="exp-box">
+              <div class="work">
+                <h1>BACC+1 in Architecture and Network </h1>
+                <h2>the University of N’Gaoundéré</h2>
+              </div>
+              <div class="date-range">
+                <p>2016 - 2017</p>
+              </div>
+            </div>
+            <div class="exp-box">
+              <div class="work">
+                <h1>BACCALAUREAT F5 (Cold and Air Conditioning)</h1>
+                <h2>L.T Nylon Douala</h2>
+              </div>
+              <div class="date-range">
+                <p>2012 - 2013</p>
+              </div>
+            </div>
+            <div class="exp-box">
+              <div class="work">
+                <h1>PROBATORY F5</h1>
+                <h2>L.T Nylon Douala</h2>
+              </div>
+              <div class="date-range">
+                <p>2011 - 2012</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- EDUCATION SECTION END -->
+
+<!-- INTEREST SECTION START 1-->
+
+  <section id="interest">
+    <div class="container">
+      <div class="row">
+        <div class="tittle">
+          <h1>KNOW TO BE</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="shodow-box">
+          <div class="expi">
+            <div class="exp-box">
+              <div class="interest">
+                <ul>
+                  <li>Creative and Rigorous</li>
+                  <li>Good Relational</li>
+                  <li>Resistance to Stress</li>
+                  <li>Preference for teamwork</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- INTEREST SECTION END 1-->
+  <!-- INTEREST SECTION START -->
+
+  <section id="interest">
+    <div class="container">
+      <div class="row">
+        <div class="tittle">
+          <h1>Interest</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="shodow-box">
+          <div class="expi">
+            <div class="exp-box">
+              <div class="interest">
+                <ul>
+                  <li>Reading</li>
+                  <li>Music</li>
+                  <li>Sport</li>
+                  <li>Interacting with People</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- INTEREST SECTION END -->
+
+  <!-- CONTACT SECTION START -->
+
+  <section id="contact">
+      <div class="container">
+          <div class="row">
+          
+              <div class="contact-me">
+                  <button class="contact-me" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact Me</button> 
+                  
+          </div>
+        
+          <div id="id01" class="modal"> 
+              
+              <form class="modal-content animate" action="form.php" method="post"> 
+                  <div class="form-container"> 
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span> 
+                          <h1 class="tittle">Talk to me</h1>
+
+                      <input class="form-input" type="text" placeholder="Enter Title" name="title" required>
+                      <input minlength="4" class="form-input" type="text" placeholder="Enter Your Name" name="name" required> 
+        
+                      <input class="form-input" type="email" placeholder="Enter Email" name="email" required> 
+      
+                      <textarea minlength="20" rows="10" class="form-input" type="text" placeholder="Enter Message" name="message" required></textarea>
+        
+                      <div class="clearfix">
+                          <button type="submit" class="signupbtn" name="send" value="send the form">Send</button> 
+                      </div> 
+                  </div> 
+              </form> 
+          </div>
+              
+          </div>
+      </div>
+          
+  </section>
+  
+  <!-- CONTACT SECTION END -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>©Brandone Sape 2019</p>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  
+<script type="text/javascript">
+  var modal = document.getElementById('id01'); 
+  
+        window.onclick = function(event) { 
+            if (event.target == modal) { 
+                modal.style.display = "none"; 
+            } 
+        }
+</script>
+
+
+</body>
+
+</html>
