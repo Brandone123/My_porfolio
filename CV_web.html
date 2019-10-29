@@ -16,13 +16,22 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
     line-height: 24px;
     color: #616161;
-    background: #e7e7e7ff;
     max-height: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(35deg, rgba(1, 65, 39, 0.2), rgba(1, 65, 39, 0.1)), url("https://res.cloudinary.com/sape123/image/upload/c_scale,w_1000/v1572364599/36634448-office-desk_iifquo.jpg") no-repeat center center fixed;
+  /* background-blend-mode: multiply; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bio {
@@ -86,6 +95,7 @@ body {
     color: #fff;
     padding-top: 25px;
     font-size: 15px;
+    font-family: 'Roboto' 'Arial';
 }
 
 .midspace {
